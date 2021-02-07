@@ -1,0 +1,64 @@
+INSERT INTO public.addresses(
+	id, city, country, street_name, street_number)
+	VALUES (1, 'Cluj-Napoca', 'Romania', 'Primaverii', 13);
+INSERT INTO public.addresses(
+	id, city, country, street_name, street_number)
+	VALUES (2, 'Bucuresti', 'Romania', 'Eroilor', 69);
+INSERT INTO public.addresses(
+	id, city, country, street_name, street_number)
+	VALUES (3, 'CLuj-Napoca', 'Romania', 'Aleea Stadionului', 2);
+
+
+INSERT INTO public.event_type(
+	type)
+	VALUES ('CONCERT');
+INSERT INTO public.event_type(
+	type)
+	VALUES ('EXHIBITION');
+
+
+INSERT INTO public.user_role(
+	role)
+	VALUES ('CUSTOMER');
+
+
+INSERT INTO public.users(
+	id, date_of_birth, email, first_name, last_name, password, user_role)
+	VALUES (1, '1984-06-23 00:00:00.000000', 'andreea@balan.com', 'Andreea', 'Balan', 'welcome', 'CUSTOMER');
+INSERT INTO public.users(
+	id, date_of_birth, email, first_name, last_name, password, user_role)
+	VALUES (2, '1995-04-03 00:00:00.000000', 'constantin@dumitrescu.com', 'Constantin', 'Dumitrescu', 'welcome', 'CUSTOMER');
+INSERT INTO public.users(
+	id, date_of_birth, email, first_name, last_name, password, user_role)
+	VALUES (3, '2005-06-07 00:00:00.000000', 'emilia@florescu.com', 'Emilia', 'Florescu', 'welcome', 'CUSTOMER');
+
+
+INSERT INTO public.events(
+	id, age_limit, date, description, max_ticket_number, name, sold_ticket_number, ticket_price, address_id, event_type)
+	VALUES (1, 18, '2021-03-01 18:00:00.000000', 'Mega concert Shakira in Bucuresti', 10, 'Shakira', 2, 100, 2, 'CONCERT');
+INSERT INTO public.events(
+	id, age_limit, date, description, max_ticket_number, name, sold_ticket_number, ticket_price, address_id, event_type)
+	VALUES (2, 18, '2021-04-01 18:00:00.000000', 'Mega concert Santana in Cluj', 10, 'Sanatana', 1, 150, 1, 'CONCERT');
+INSERT INTO public.events(
+	id, age_limit, date, description, max_ticket_number, name, sold_ticket_number, ticket_price, address_id, event_type)
+	VALUES (3, 18, '2021-05-01 18:00:00.000000', 'Mega concert Ricky Martin in Cluj', 10, 'Ricky Martin', 1, 200, 3, 'CONCERT');
+INSERT INTO public.events(
+	id, age_limit, date, description, max_ticket_number, name, sold_ticket_number, ticket_price, address_id, event_type)
+	VALUES (4, 18, '2021-03-01 18:00:00.000000', 'Galerie de arta a lui Constantin Brancusi in Cluj', 10, 'Constantin Brancusi', 1, 50, 3, 'EXHIBITION');
+
+
+INSERT INTO public.tickets(
+	id, event_id, user_id)
+	VALUES (1, 1, 1);
+INSERT INTO public.tickets(
+	id, event_id, user_id)
+	VALUES (2, 2, 2);
+INSERT INTO public.tickets(
+	id, event_id, user_id)
+	VALUES (3, 3, 3);
+INSERT INTO public.tickets(
+	id, event_id, user_id)
+	VALUES (4, 4, 1);
+INSERT INTO public.tickets(
+	id, event_id, user_id)
+	VALUES (5, 1, 2);

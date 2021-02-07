@@ -1,0 +1,28 @@
+Check spring.jpa.hibernate.ddl-auto = update or create-drop
+Add SQL Script to your DB upon the first run
+
+
+ToDo
+- add/enhance meaningful data to the DB (and create its script)
+    at least 3 Users
+    at least 5 Events (3 Concert and 2 Exhib), on different dates, and vary the cities (Cluj and Buch)
+    have at least sevaral tickets sold - be consistent with the _sold ticket_ attribute
+- exception revision
+- clean up names
+- event getAll merge with filter; add available  ticket nr (max-sold)
+- ticket buy exception with multiple user and event
+- ticket buy: get parameter from postman
+- next meeting: 27.01.2021 : 19:30
+
+1) no enum constant (value must be specified)
+2) RequestParam parse a String, date is of type LocalDateTime
+
+For us:
+1) SQL script starting with id=1
+2)
+
+
+Vineri Rares
+1) UI buttons, ajunge Postman ? Swagger
+2) Exceptions in UI
+3) Enum
